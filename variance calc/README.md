@@ -265,3 +265,14 @@ sigma_T = sqrt(T) * sigma
    - powershell -ExecutionPolicy Bypass -File .\start_bot.ps1 -EnvFile .env.bot2
 
 Important: one token must be used by only one polling process.
+
+## Railway deployment
+
+1. Push this repository to GitHub.
+2. Create a new Railway project from the repo.
+3. In Railway Variables, set `BOT_TOKEN` to your Telegram bot token.
+4. Deploy service. Start command is already set in `railway.toml` to `python bot.py`.
+
+Notes:
+- Do not run the same token in multiple polling processes at the same time.
+- If you use multiple bots, deploy separate Railway services with different `BOT_TOKEN` values.
