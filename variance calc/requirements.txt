@@ -1,0 +1,6 @@
+aiogram>=3.7,<4.0
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+matplotlib>=3.8
+python-dotenv>=1.0
